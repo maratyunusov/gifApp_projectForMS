@@ -24,6 +24,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loginTextField.delegate = self
+        passwordTextField.delegate = self
         urlManager.delegate = self
     }
     
@@ -46,7 +48,25 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
 }
+
+//MARK: - Login and Password textFields
+
+extension LoginViewController: UITextFieldDelegate{
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        loginTextField.resignFirstResponder()
+        passwordTextField.becomeFirstResponder()
+        
+        if passwordTextField.text != "" {
+            passwordTextField.endEditing(true)
+        }
+        return true
+    }
+}
+
 
 extension LoginViewController: TokenManagerDelegate {
     

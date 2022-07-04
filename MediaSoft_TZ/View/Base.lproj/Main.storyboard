@@ -39,44 +39,44 @@
                                 <rect key="frame" x="0.0" y="268.5" width="414" height="593.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlH-XW-2Xs" userLabel="ViewEmailPassButton">
-                                        <rect key="frame" x="82" y="230" width="250" height="74"/>
+                                        <rect key="frame" x="57" y="100" width="300" height="200"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tDl-r2-31l">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOq-2P-mMz">
-                                                <rect key="frame" x="-1" y="39" width="250" height="34"/>
+                                                <rect key="frame" x="0.0" y="39" width="299" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAj-HJ-00j">
+                                                <rect key="frame" x="118" y="108" width="64" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Log In"/>
+                                                <connections>
+                                                    <action selector="logInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUD-yd-5D7"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="EAj-HJ-00j" firstAttribute="top" secondItem="iOq-2P-mMz" secondAttribute="bottom" constant="35" id="1GX-G8-MoZ"/>
+                                            <constraint firstAttribute="width" constant="300" id="BKN-Pg-Ic0"/>
                                             <constraint firstItem="tDl-r2-31l" firstAttribute="leading" secondItem="PlH-XW-2Xs" secondAttribute="leading" id="DEi-U1-RuC"/>
                                             <constraint firstAttribute="trailing" secondItem="iOq-2P-mMz" secondAttribute="trailing" constant="1" id="DEr-QR-pb4"/>
                                             <constraint firstItem="tDl-r2-31l" firstAttribute="top" secondItem="PlH-XW-2Xs" secondAttribute="top" id="VWf-my-d8H"/>
-                                            <constraint firstAttribute="height" constant="74" id="Vh3-sP-1Ya"/>
-                                            <constraint firstAttribute="width" constant="250" id="YrS-o8-OyU"/>
                                             <constraint firstAttribute="trailing" secondItem="tDl-r2-31l" secondAttribute="trailing" id="bXE-gw-hEQ"/>
-                                            <constraint firstItem="iOq-2P-mMz" firstAttribute="leading" secondItem="PlH-XW-2Xs" secondAttribute="leading" constant="-1" id="c9p-hp-8Zd"/>
+                                            <constraint firstItem="iOq-2P-mMz" firstAttribute="leading" secondItem="PlH-XW-2Xs" secondAttribute="leading" id="c9p-hp-8Zd"/>
+                                            <constraint firstItem="EAj-HJ-00j" firstAttribute="centerX" secondItem="PlH-XW-2Xs" secondAttribute="centerX" id="igk-6v-diy"/>
                                             <constraint firstItem="iOq-2P-mMz" firstAttribute="top" secondItem="tDl-r2-31l" secondAttribute="bottom" constant="5" id="t9T-lo-jBA"/>
+                                            <constraint firstAttribute="height" constant="200" id="vEO-Qo-GHg"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAj-HJ-00j">
-                                        <rect key="frame" x="175" y="324" width="64" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Log In"/>
-                                        <connections>
-                                            <action selector="logInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUD-yd-5D7"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="PlH-XW-2Xs" firstAttribute="centerX" secondItem="nwE-r2-dgw" secondAttribute="centerX" id="CL3-VW-XRv"/>
-                                    <constraint firstItem="EAj-HJ-00j" firstAttribute="top" secondItem="PlH-XW-2Xs" secondAttribute="bottom" constant="20" id="Wnf-UH-6YM"/>
-                                    <constraint firstItem="PlH-XW-2Xs" firstAttribute="centerY" secondItem="nwE-r2-dgw" secondAttribute="centerY" constant="-30" id="g5w-Ya-MNI"/>
-                                    <constraint firstItem="EAj-HJ-00j" firstAttribute="centerX" secondItem="nwE-r2-dgw" secondAttribute="centerX" id="rhb-m1-EgI"/>
+                                    <constraint firstItem="PlH-XW-2Xs" firstAttribute="centerX" secondItem="nwE-r2-dgw" secondAttribute="centerX" id="CzT-52-ige"/>
+                                    <constraint firstItem="PlH-XW-2Xs" firstAttribute="top" secondItem="nwE-r2-dgw" secondAttribute="top" constant="100" id="ovA-Ob-k8n"/>
                                 </constraints>
                             </view>
                         </subviews>
