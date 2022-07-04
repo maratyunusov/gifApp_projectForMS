@@ -61,6 +61,9 @@ extension ContentViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ContentViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        
+        
         print(searchText)
     }
 }

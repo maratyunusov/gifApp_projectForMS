@@ -35,15 +35,15 @@ class LoginViewController: UIViewController {
             
         if let login = loginTextField.text, let password = passwordTextField.text {
             urlManager.fetchPasswordGrant(userName: login, userPassword: password)
-        }
-        sleep(5)
-        if let token = self.accessToken {
-            if let contentViewController = storyboardInstance.instantiateViewController(withIdentifier: "LoginToTableViewController") as? TabBarViewController {
-                contentViewController.accessTokenForContent1 = token
-                self.navigationController?.pushViewController(contentViewController, animated: true)
+            sleep(3)
+            if let token = self.accessToken {
+                if let contentViewController = self.storyboardInstance.instantiateViewController(withIdentifier: "LoginToTableViewController") as? TabBarViewController {
+                    contentViewController.accessTokenForContent1 = token
+                    self.navigationController?.pushViewController(contentViewController, animated: true)
+                }
+            } else {
+                self.errorAlertShow()
             }
-        } else {
-            errorAlertShow()
         }
     }
 }

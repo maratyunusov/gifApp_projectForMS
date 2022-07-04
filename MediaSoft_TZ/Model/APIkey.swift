@@ -10,8 +10,8 @@ import Foundation
 
 struct APIKey {
     let grandType = "client_credentials"
-    let clientID = "2_UMXdLw"
-    let clientSecret = "tm10TavmZJ6-krA3nCCUEINcj9YZJVWlh2hD5gsJVo5Y_1PUx1K-pWvUP0Uf5328"
+    let clientID = "2_apvjtA"
+    let clientSecret = "CueDalnGpzgtIvP4LhANie_j0e0z7BKBExOdgZ6gO7mZxIJNZ-xntsIXCqcOCC0G"
 }
 
 
